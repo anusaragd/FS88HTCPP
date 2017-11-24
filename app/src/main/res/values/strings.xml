@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">FS88HTCPP</string>
+
+    <string-array name="FingerNameArray">
+        <item>Unknown finger</item>
+        <item>Right thumb</item>
+        <item>Right index finger</item>
+        <item>Right middle finger</item>
+        <item>Right ring finger</item>
+        <item>Right little finger</item>
+        <item>Left thumb</item>
+        <item>Left index finger</item>
+        <item>Left middle finger</item>
+        <item>Left ring finger</item>
+        <item>Left little finger</item>
+    </string-array>
+    <string-array name="MatchScoreArray">
+        <item>Low</item>
+        <item>Low medium</item>
+        <item>Medium</item>
+        <item>High medium</item>
+        <item>High</item>
+        <item>Very high</item>
+    </string-array>
+
 </resources>
