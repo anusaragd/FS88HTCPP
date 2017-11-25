@@ -91,10 +91,21 @@ public class MainActivity extends AppCompatActivity {
 
     private UsbDeviceDataExchangeImpl usb_host_ctx = null;
 
+    Button go;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button go = (Button) findViewById(R.id.button);
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, testMainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mMatchScoreValue[0] = AnsiSDKLib.FTR_ANSISDK_MATCH_SCORE_LOW;
         mMatchScoreValue[1] = AnsiSDKLib.FTR_ANSISDK_MATCH_SCORE_LOW_MEDIUM;
