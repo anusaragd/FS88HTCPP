@@ -1,5 +1,6 @@
 package com.example.masters.fs88htcpp;
 
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CompoundButton;
@@ -27,5 +28,13 @@ public class testMainActivity extends AppCompatActivity {
                 }
             }
         });
+
+//        SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.activity_test_main);
+//        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+//            @Override
+//            public void onRefresh() {
+//                refreshData();
+//            }
+//        });
     }
 }
